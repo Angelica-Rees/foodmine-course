@@ -6,13 +6,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Run
 
-## Build
+1. Have Docker running [https://docs.docker.com/engine/install/]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Within this directory run `docker build -t foodmine .`
+
+3. Run `docker run -d -it -p 80:80/tcp foodmine`
+
+4. Go to browser and type `localhost:80`
+
+5. When finished with it, run `docker stop <docker container id>`
 
 ## Running unit tests
 
